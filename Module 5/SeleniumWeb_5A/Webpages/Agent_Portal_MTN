@@ -1,0 +1,23 @@
+from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.service import Service
+import time
+
+def send_keys_to_agent_portal(element, *keys):
+    element.send_keys(keys)
+def main():
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    driver.get("http://10.1.88.26:8081/agentportal/agentportal/Application.html#SUBSCRIBERS/2")
+
+    send_keys_to_agent_portal(driver.find_element(By.XPATH,'//*[@id="gwt-debug-Phone_Number"]'),"9132058690")
+    #send_keys_to_agent_portal(driver.find_element(By.XPATH, '//*[@id="gwt-debug-PIN/Password"]'), "pin")
+    #login = driver.find_element(By.NAME, "login").click()
+    #print("login:", login)
+    time.sleep(50)
+
+
+
+if __name__ == '__main__':
+    main()
+
