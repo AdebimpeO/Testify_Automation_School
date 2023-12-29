@@ -1,0 +1,12 @@
+{
+    "name": "Testify Academy_Automation School",
+    "version": "1.0.0",
+    "description": "A repository for all Testify Academy Automation School Tasks",
+    "main": "index.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+  

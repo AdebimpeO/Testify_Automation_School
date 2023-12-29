@@ -1,0 +1,1 @@
+console.log('Hello Adebimpe, welcome to Testify Academy_Automation School')
